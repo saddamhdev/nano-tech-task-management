@@ -1,0 +1,850 @@
+{"timestamp":"2026-04-02T07:36:52.127",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.authservice.AuthServiceApplication",
+ "message":"Starting AuthServiceApplication using Java 25.0.1 with PID 7780 (D:\module project\base\auth-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:36:52.161",
+ "level":"DEBUG",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.authservice.AuthServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:36:52.165",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.authservice.AuthServiceApplication",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:36:57.584",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:36:57.896",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 261 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:02.515",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8096 (http)",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:02.605",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:02.606",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:03.068",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 10564 ms",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:04.535",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:04.835",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:07.789",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:07.965",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:08.948",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:authdb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:08.956",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:09.077",
+ "level":"WARN",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:09.199",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:authdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: AUTHDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:14.622",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:15.057",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:15.518",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:16.876",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer",
+ "message":"Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:16.877",
+ "level":"WARN",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer",
+ "message":"Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:17.222",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:17.504",
+ "level":"WARN",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:19.107",
+ "level":"DEBUG",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.s.web.DefaultSecurityFilterChain",
+ "message":"Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:23.164",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 3 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:23.560",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8096 (http) with context path '/'",
+ "exception":""}
+
+{"timestamp":"2026-04-02T07:37:23.605",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.authservice.AuthServiceApplication",
+ "message":"Started AuthServiceApplication in 34.074 seconds (process running for 44.593)",
+ "exception":""}
+
+{"timestamp":"2026-04-02T08:28:54.124",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"http-nio-8096-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.c.c.C.[Tomcat].[localhost].[/]",
+ "message":"Initializing Spring DispatcherServlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-04-02T08:28:54.131",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"http-nio-8096-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Initializing Servlet 'dispatcherServlet'",
+ "exception":""}
+
+{"timestamp":"2026-04-02T08:28:54.177",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"http-nio-8096-exec-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.web.servlet.DispatcherServlet",
+ "message":"Completed initialization in 46 ms",
+ "exception":""}
+
+{"timestamp":"2026-04-02T08:28:54.277",
+ "level":"DEBUG",
+ "service":"auth-service",
+ "thread":"http-nio-8096-exec-1",
+ "traceId":"05aab1c576794f4f81179a4fec107004",
+ "spanId":"282ce8954b944203",
+ "correlationId":"768d0c26-5ce7-4de2-81fa-2927061acb79",
+ "jobId":"",
+ "logger":"o.s.security.web.FilterChainProxy",
+ "message":"Securing POST /api/auth/task-auth/login",
+ "exception":""}
+
+{"timestamp":"2026-04-02T08:28:54.326",
+ "level":"DEBUG",
+ "service":"auth-service",
+ "thread":"http-nio-8096-exec-1",
+ "traceId":"05aab1c576794f4f81179a4fec107004",
+ "spanId":"282ce8954b944203",
+ "correlationId":"768d0c26-5ce7-4de2-81fa-2927061acb79",
+ "jobId":"",
+ "logger":"o.s.s.w.a.AnonymousAuthenticationFilter",
+ "message":"Set SecurityContextHolder to anonymous SecurityContext",
+ "exception":""}
+
+{"timestamp":"2026-04-02T08:28:54.344",
+ "level":"DEBUG",
+ "service":"auth-service",
+ "thread":"http-nio-8096-exec-1",
+ "traceId":"05aab1c576794f4f81179a4fec107004",
+ "spanId":"282ce8954b944203",
+ "correlationId":"768d0c26-5ce7-4de2-81fa-2927061acb79",
+ "jobId":"",
+ "logger":"o.s.security.web.FilterChainProxy",
+ "message":"Secured POST /api/auth/task-auth/login",
+ "exception":""}
+
+{"timestamp":"2026-04-02T08:28:54.417",
+ "level":"ERROR",
+ "service":"auth-service",
+ "thread":"http-nio-8096-exec-1",
+ "traceId":"05aab1c576794f4f81179a4fec107004",
+ "spanId":"282ce8954b944203",
+ "correlationId":"768d0c26-5ce7-4de2-81fa-2927061acb79",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"Unhandled exception - traceId=05aab1c576794f4f81179a4fec107004, correlationId=768d0c26-5ce7-4de2-81fa-2927061acb79",
+ "exception":"org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/auth/task-auth/login for request '/api/auth/task-auth/login'.\\n	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)\\n	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)\\n	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\\n	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)\\n	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)\\n	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)\\n	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)\\n	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)\\n	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)\\n	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:493)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:354)\\n	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:86)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:132)\\n	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)\\n	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)\\n	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)\\n	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)\\n	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)\\n	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:337)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)\\n	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)\\n	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)\\n	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\\n	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)\\n	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\\n	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)\\n	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)\\n	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)\\n	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.IncomingIpWhitelistFilter.doFilter(IncomingIpWhitelistFilter.java:56)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)\\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at snvn.common.filter.MdcLoggingFilter.doFilter(MdcLoggingFilter.java:99)\\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)\\n	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)\\n	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)\\n	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\n	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)\\n	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)\\n	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)\\n	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\\n	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)\\n	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\n	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\\n	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)\\n	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)\\n	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)\\n	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)\\n	at java.base/java.lang.Thread.run(Thread.java:1474)\\n"}
+
+{"timestamp":"2026-04-02T09:50:45.241",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Commencing graceful shutdown. Waiting for active requests to complete",
+ "exception":""}
+
+{"timestamp":"2026-04-02T09:50:45.351",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"tomcat-shutdown",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.GracefulShutdown",
+ "message":"Graceful shutdown complete",
+ "exception":""}
+
+{"timestamp":"2026-04-02T09:50:45.430",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-04-02T09:50:45.503",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-04-02T09:50:45.530",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:42.037",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.authservice.AuthServiceApplication",
+ "message":"Starting AuthServiceApplication using Java 25.0.1 with PID 16796 (D:\module project\base\auth-service\target\classes started by 01957 in D:\module project\base)",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:42.047",
+ "level":"DEBUG",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.authservice.AuthServiceApplication",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:42.049",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.authservice.AuthServiceApplication",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:45.249",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:45.525",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 226 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:47.681",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat initialized with port 8096 (http)",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:47.731",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardService",
+ "message":"Starting service [Tomcat]",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:47.733",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.a.catalina.core.StandardEngine",
+ "message":"Starting Servlet engine: [Apache Tomcat/11.0.14]",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:47.995",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.w.c.s.WebApplicationContextInitializer",
+ "message":"Root WebApplicationContext: initialization completed in 5736 ms",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:48.992",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:49.236",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:51.403",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:51.545",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:52.368",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:authdb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:52.373",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:52.471",
+ "level":"WARN",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:52.579",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:authdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: AUTHDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:56.569",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:56.841",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:57.166",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:57.949",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer",
+ "message":"Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:57.951",
+ "level":"WARN",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer",
+ "message":"Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:58.180",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:58.345",
+ "level":"WARN",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:10:59.477",
+ "level":"DEBUG",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.s.web.DefaultSecurityFilterChain",
+ "message":"Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:11:01.702",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 3 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:11:02.162",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.boot.tomcat.TomcatWebServer",
+ "message":"Tomcat started on port 8096 (http) with context path '/'",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:11:02.210",
+ "level":"INFO",
+ "service":"auth-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.authservice.AuthServiceApplication",
+ "message":"Started AuthServiceApplication in 22.109 seconds (process running for 24.302)",
+ "exception":""}
+
+{"timestamp":"2026-04-02T13:51:50.500",
+ "level":"WARN",
+ "service":"auth-service",
+ "thread":"HikariPool-1:housekeeper",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m27s903ms306µs400ns).",
+ "exception":""}
+

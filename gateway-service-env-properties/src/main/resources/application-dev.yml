@@ -1,0 +1,239 @@
+spring:
+  application:
+    name: gateway-service
+  config:
+    import:
+      - "optional:classpath:splunk-hec-dev.yml"
+      - "optional:classpath:redis-shared-dev.yml"
+      - "optional:classpath:log-file-dev.yml"
+      - "optional:classpath:application-rabbitmq-dev.yml"
+      - "optional:classpath:application-kafka-dev.yml"
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:6062/realms/snvn
+
+  cloud:
+    gateway:
+      routes:
+
+
+        - id: notification-service
+          uri: http://localhost:8100
+          predicates:
+            - Path=/api/notifications/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: notificationServiceCB
+                fallbackUri: forward:/fallback
+
+        - id: kafka-service
+          uri: http://localhost:8097
+          predicates:
+            - Path=/api/kafka/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: kafkaServiceCB
+                fallbackUri: forward:/fallback
+        - id: rabbitmq-service
+          uri: http://localhost:8098
+          predicates:
+            - Path=/api/rabbitmq/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: rabbitmqServiceCB
+                fallbackUri: forward:/fallback
+        - id: task-management-service
+          uri: http://localhost:8105
+          predicates:
+            - Path=/api/tasks/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: taskManagementServiceCB
+                fallbackUri: forward:/fallback
+        - id: config-service
+          uri: http://localhost:8092
+          predicates:
+            - Path=/config/**
+
+        - id: task-management-auth-service
+          uri: http://localhost:8105
+          predicates:
+            - Path=/api/task-auth/**
+          filters:
+            - name: RewritePath
+              args:
+                regexp: /api/task-auth/(?<segment>.*)
+                replacement: /api/auth/${segment}
+            - name: CircuitBreaker
+              args:
+                name: taskManagementServiceCB
+                fallbackUri: forward:/fallback
+
+        - id: task-management-user-service
+          uri: http://localhost:8105
+          predicates:
+            - Path=/api/task-users/**
+          filters:
+            - name: RewritePath
+              args:
+                regexp: /api/task-users/(?<segment>.*)
+                replacement: /api/users/${segment}
+            - name: CircuitBreaker
+              args:
+                name: taskManagementServiceCB
+                fallbackUri: forward:/fallback
+
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:3000"
+              - "http://localhost:8093"
+              - "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - PATCH
+              - OPTIONS
+            allowedHeaders: "*"
+            exposedHeaders:
+              - "Content-Type"
+              - "Authorization"
+            allowCredentials: false
+            maxAge: 3600
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: '@#12345678'
+
+# Resilience4j Configuration (must be at root level, not under spring)
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        registerHealthIndicator: true
+        slidingWindowSize: 20
+        minimumNumberOfCalls: 10
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 10000
+        failureRateThreshold: 70
+        slowCallRateThreshold: 100
+        slowCallDurationThreshold: 30000
+    instances:
+      userServiceCB:
+        baseConfig: default
+      authServiceCB:
+        baseConfig: default
+      accountServiceCB:
+        baseConfig: default
+      transactionServiceCB:
+        baseConfig: default
+      notificationServiceCB:
+        baseConfig: default
+      auditServiceCB:
+        baseConfig: default
+      kafkaServiceCB:
+        baseConfig: default
+      rabbitmqServiceCB:
+        baseConfig: default
+      taskManagementServiceCB:
+        baseConfig: default
+  timelimiter:
+    configs:
+      default:
+        timeoutDuration: 30s
+        cancelRunningFuture: true
+    instances:
+      userServiceCB:
+        baseConfig: default
+      authServiceCB:
+        baseConfig: default
+      accountServiceCB:
+        baseConfig: default
+      transactionServiceCB:
+        baseConfig: default
+      notificationServiceCB:
+        baseConfig: default
+      auditServiceCB:
+        baseConfig: default
+      kafkaServiceCB:
+        baseConfig: default
+      rabbitmqServiceCB:
+        baseConfig: default
+      taskManagementServiceCB:
+        baseConfig: default
+
+server:
+  port: 8093
+  servlet:
+    context-path: /gateway
+
+eureka:
+  client:
+    enabled: false
+
+service-log:
+  logfile:
+    enabled: false
+  splunk:
+    enabled: true
+  rabbitmq:
+    enabled: false
+  kafka:
+    enabled: false
+
+rabbitmq-service-log:
+  auto-startup: false
+
+security:
+  keycloak:
+    enabled: false
+
+  api-key:
+    enabled: true
+    header: X-API-KEY
+    value: my-secret-key
+
+  rate-limit:
+    enabled: true
+    requests-per-minute: 2
+
+  ip-filter:
+    enabled: false
+
+
+incoming-ip-whitelist:
+  enabled: false
+
+  allowed-ips:
+
+    - service: gateway-service
+      enabled: true
+      address: 0:0:0:0:0:0:0:1
+      protocol: tcp
+      portStart: 0
+      portEnd: 65535
+
+    - service: account-service
+      enabled: true
+      address: 10.0.1.20
+      protocol: tcp
+      portStart: 8081
+      portEnd: 8081
+
+    - service: fraud-service
+      enabled: false   # disabled service
+      address: 10.0.1.30
+      protocol: tcp
+      portStart: 8082
+      portEnd: 8082

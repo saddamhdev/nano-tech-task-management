@@ -1,0 +1,1186 @@
+{"timestamp":"2026-03-18T15:01:58.640",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplicationTests",
+ "message":"Starting RabbitMQServiceApplicationTests using Java 21.0.7 with PID 16924 (started by 01957 in D:\module project\base\rabbitmq-service)",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:01:58.659",
+ "level":"DEBUG",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplicationTests",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:01:58.661",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplicationTests",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:03.254",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:03.493",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 204 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:05.086",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'rabbitMQConfig' of type [snvn.rabbitmqservice.config.RabbitMQConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:06.314",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'jackson2JsonMessageConverter' of type [org.springframework.amqp.support.converter.Jackson2JsonMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:07.786",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:08.346",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:11.685",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:11.855",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:12.885",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:rabbitmqdb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:12.905",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:12.999",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:13.076",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:rabbitmqdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: RABBITMQDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:15.378",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:15.521",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:15.824",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:18.038",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:18.363",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:21.635",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 3 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.092",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.205",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: getsockopt",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.221",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.252",
+ "level":"ERROR",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Failed to check/redeclare auto-delete queue(s).",
+ "exception":"org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt\\n	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:60)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:629)\\n	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:745)\\n	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:256)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2241)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2213)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2193)\\n	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:472)\\n	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:456)\\n	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1959)\\n	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1923)\\n	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1523)\\n	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1356)\\n	at java.base/java.lang.Thread.run(Thread.java:1583)\\nCaused by: java.net.ConnectException: Connection refused: getsockopt\\n	at java.base/sun.nio.ch.Net.pollConnect(Native Method)\\n	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)\\n	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)\\n	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)\\n	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)\\n	at java.base/java.net.Socket.connect(Socket.java:751)\\n	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)\\n	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1355)\\n	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1297)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:676)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:644)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:590)\\n	... 12 common frames omitted\\n"}
+
+{"timestamp":"2026-03-18T15:02:22.265",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.283",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.315",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: getsockopt",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.317",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.347",
+ "level":"ERROR",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Failed to check/redeclare auto-delete queue(s).",
+ "exception":"org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt\\n	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:60)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:629)\\n	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:745)\\n	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:256)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2241)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2213)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2193)\\n	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:472)\\n	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:456)\\n	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1959)\\n	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1923)\\n	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1523)\\n	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1356)\\n	at java.base/java.lang.Thread.run(Thread.java:1583)\\nCaused by: java.net.ConnectException: Connection refused: getsockopt\\n	at java.base/sun.nio.ch.Net.pollConnect(Native Method)\\n	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)\\n	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)\\n	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)\\n	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)\\n	at java.base/java.net.Socket.connect(Socket.java:751)\\n	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)\\n	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1355)\\n	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1297)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:676)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:644)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:590)\\n	... 12 common frames omitted\\n"}
+
+{"timestamp":"2026-03-18T15:02:22.350",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.364",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.378",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: getsockopt",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.380",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.410",
+ "level":"ERROR",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Failed to check/redeclare auto-delete queue(s).",
+ "exception":"org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt\\n	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:60)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:629)\\n	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:745)\\n	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:256)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2241)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2213)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2193)\\n	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:472)\\n	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:456)\\n	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1959)\\n	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1923)\\n	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1523)\\n	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1356)\\n	at java.base/java.lang.Thread.run(Thread.java:1583)\\nCaused by: java.net.ConnectException: Connection refused: getsockopt\\n	at java.base/sun.nio.ch.Net.pollConnect(Native Method)\\n	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)\\n	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)\\n	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)\\n	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)\\n	at java.base/java.net.Socket.connect(Socket.java:751)\\n	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)\\n	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1355)\\n	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1297)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:676)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:644)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:590)\\n	... 12 common frames omitted\\n"}
+
+{"timestamp":"2026-03-18T15:02:22.413",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.442",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.473",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: getsockopt",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.475",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.489",
+ "level":"ERROR",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Failed to check/redeclare auto-delete queue(s).",
+ "exception":"org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt\\n	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:60)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:629)\\n	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:745)\\n	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:256)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2241)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2213)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2193)\\n	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:472)\\n	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:456)\\n	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1959)\\n	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1923)\\n	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1523)\\n	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1356)\\n	at java.base/java.lang.Thread.run(Thread.java:1583)\\nCaused by: java.net.ConnectException: Connection refused: getsockopt\\n	at java.base/sun.nio.ch.Net.pollConnect(Native Method)\\n	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)\\n	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)\\n	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)\\n	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)\\n	at java.base/java.net.Socket.connect(Socket.java:751)\\n	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)\\n	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1355)\\n	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1297)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:676)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:644)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:590)\\n	... 12 common frames omitted\\n"}
+
+{"timestamp":"2026-03-18T15:02:22.489",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.505",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.537",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: getsockopt",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.540",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.569",
+ "level":"ERROR",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Failed to check/redeclare auto-delete queue(s).",
+ "exception":"org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt\\n	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:60)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:629)\\n	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:745)\\n	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:256)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2241)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2213)\\n	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2193)\\n	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:472)\\n	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:456)\\n	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1959)\\n	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1923)\\n	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1523)\\n	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1356)\\n	at java.base/java.lang.Thread.run(Thread.java:1583)\\nCaused by: java.net.ConnectException: Connection refused: getsockopt\\n	at java.base/sun.nio.ch.Net.pollConnect(Native Method)\\n	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)\\n	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)\\n	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)\\n	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)\\n	at java.base/java.net.Socket.connect(Socket.java:751)\\n	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)\\n	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1355)\\n	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1297)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:676)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:644)\\n	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:590)\\n	... 12 common frames omitted\\n"}
+
+{"timestamp":"2026-03-18T15:02:22.569",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:22.607",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplicationTests",
+ "message":"Started RabbitMQServiceApplicationTests in 25.224 seconds (process running for 30.434)",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:23.920",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:23.920",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:23.920",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:23.920",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:23.920",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:23.920",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:23.920",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:23.920",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:23.922",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:23.922",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:24.028",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:24.040",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:02:24.047",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:24:51.829",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplicationTests",
+ "message":"Starting RabbitMQServiceApplicationTests using Java 21.0.7 with PID 5732 (started by 01957 in D:\module project\base\rabbitmq-service)",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:24:51.837",
+ "level":"DEBUG",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplicationTests",
+ "message":"Running with Spring Boot v4.0.0, Spring v7.0.1",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:24:51.839",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplicationTests",
+ "message":"No active profile set, falling back to 1 default profile: "default"",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:24:56.483",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:24:56.745",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.r.c.RepositoryConfigurationDelegate",
+ "message":"Finished Spring Data repository scanning in 208 ms. Found 1 JPA repository interface.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:24:58.479",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'rabbitMQConfig' of type [snvn.rabbitmqservice.config.RabbitMQConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:24:59.269",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+ "message":"Bean 'jackson2JsonMessageConverter' of type [org.springframework.amqp.support.converter.Jackson2JsonMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [rabbitTemplateBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:00.197",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.jpa.internal.util.LogHelper",
+ "message":"HHH000204: Processing PersistenceUnitInfo [name: default]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:01.085",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.Version",
+ "message":"HHH000412: Hibernate ORM core version 7.1.8.Final",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:05.072",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.p.SpringPersistenceUnitInfo",
+ "message":"No LoadTimeWeaver setup: ignoring JPA class transformer",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:05.206",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Starting...",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:05.788",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.pool.HikariPool",
+ "message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:rabbitmqdb user=SA",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:05.795",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Start completed.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:05.859",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"org.hibernate.orm.deprecation",
+ "message":"HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:05.918",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.hibernate.orm.connections.pooling",
+ "message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:rabbitmqdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: RABBITMQDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:08.210",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.h.e.t.j.p.i.JtaPlatformInitiator",
+ "message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:08.340",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Initialized JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:08.654",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.d.j.r.q.QueryEnhancerFactories",
+ "message":"Hibernate is in classpath; If applicable, HQL parser will be used.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:11.816",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.c.exception.GlobalExceptionHandler",
+ "message":"GlobalExceptionHandler initialized with: NoOpExternalLogService",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:12.153",
+ "level":"WARN",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration",
+ "message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:15.321",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.b.a.e.web.EndpointLinksResolver",
+ "message":"Exposing 3 endpoints beneath base path '/actuator'",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:15.871",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Attempting to connect to: [localhost:5672]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:16.316",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.c.CachingConnectionFactory",
+ "message":"Created new connection: rabbitConnectionFactory#6ecf239d:0/SimpleConnection@42f40ad0 [delegate=amqp://admin@0:0:0:0:0:0:0:1:5672/, localPort=53887]",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:16.677",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"main",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"s.r.RabbitMQServiceApplicationTests",
+ "message":"Started RabbitMQServiceApplicationTests in 26.299 seconds (process running for 30.304)",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.379",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.381",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.384",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.387",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.389",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Waiting for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.622",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.638",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.654",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.668",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.684",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-2",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.a.r.l.SimpleMessageListenerContainer",
+ "message":"Successfully waited for workers to finish.",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.813",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean",
+ "message":"Closing JPA EntityManagerFactory for persistence unit 'default'",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.822",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown initiated...",
+ "exception":""}
+
+{"timestamp":"2026-03-18T15:25:18.832",
+ "level":"INFO",
+ "service":"rabbitmq-service",
+ "thread":"SpringApplicationShutdownHook",
+ "traceId":"",
+ "spanId":"",
+ "correlationId":"",
+ "jobId":"",
+ "logger":"com.zaxxer.hikari.HikariDataSource",
+ "message":"HikariPool-1 - Shutdown completed.",
+ "exception":""}
+

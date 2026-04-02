@@ -1,0 +1,194 @@
+spring:
+  application:
+    name: gateway-service
+  config:
+    import:
+      - "optional:classpath:log-file-test.yml"
+      - "optional:classpath:splunk-hec-test.yml"
+      - "optional:classpath:application-rabbitmq-test.yml"
+      - "optional:classpath:application-kafka-test.yml"
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:6062/realms/snvn
+
+  cloud:
+    gateway:
+      routes:
+        - id: user-service-route
+          uri: http://localhost:8102
+          predicates:
+            - Path=/api/users/**
+          filters:
+            - AddRequestHeader=X-Service, user-service
+
+        - id: auth-service-route
+          uri: http://localhost:8096
+          predicates:
+            - Path=/api/auth/**
+          filters:
+            - AddRequestHeader=X-Service, auth-service
+
+        - id: account-service-route
+          uri: http://localhost:8095
+          predicates:
+            - Path=/api/accounts/**
+          filters:
+            - AddRequestHeader=X-Service, account-service
+
+        - id: transaction-service-route
+          uri: http://localhost:8101
+          predicates:
+            - Path=/api/transactions/**
+          filters:
+            - AddRequestHeader=X-Service, transaction-service
+
+        - id: notification-service-route
+          uri: http://localhost:8100
+          predicates:
+            - Path=/api/notifications/**
+          filters:
+            - AddRequestHeader=X-Service, notification-service
+
+        - id: audit-service-route
+          uri: http://localhost:8099
+          predicates:
+            - Path=/api/audit/**
+          filters:
+            - AddRequestHeader=X-Service, audit-service
+
+        - id: kafka-service-route
+          uri: http://localhost:8097
+          predicates:
+            - Path=/api/kafka/**
+          filters:
+            - AddRequestHeader=X-Service, kafka-service
+
+        - id: rabbitmq-service-route
+          uri: http://localhost:8098
+          predicates:
+            - Path=/api/rabbitmq/**
+          filters:
+            - AddRequestHeader=X-Service, rabbitmq-service
+
+        - id: task-management-service-route
+          uri: http://localhost:8105
+          predicates:
+            - Path=/api/tasks/**
+          filters:
+            - AddRequestHeader=X-Service, task-management-service
+
+        - id: config-service-route
+          uri: http://localhost:8092
+          predicates:
+            - Path=/config/**
+          filters:
+            - AddRequestHeader=X-Service, config-service
+
+
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "localhost,127.0.0.1"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+            maxAge: 3600
+
+server:
+  port: 8093
+  servlet:
+    context-path: /gateway
+
+eureka:
+  client:
+    enabled: false
+
+# Environment: Test
+logging:
+  level:
+    root: DEBUG
+    snvn: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+# Resilience4j Configuration (must be at root level, not under spring)
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        registerHealthIndicator: true
+        slidingWindowSize: 20
+        minimumNumberOfCalls: 10
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 10000
+        failureRateThreshold: 70
+        slowCallRateThreshold: 100
+        slowCallDurationThreshold: 30000
+  timelimiter:
+    configs:
+      default:
+        timeoutDuration: 30s
+        cancelRunningFuture: true
+
+service-log:
+  logfile:
+    enabled: true
+  splunk:
+    enabled: true
+  rabbitmq:
+    enabled: true
+
+rabbitmq-service-log:
+  auto-startup: false
+
+
+security:
+  keycloak:
+    enabled: true
+
+  api-key:
+    enabled: true
+    header: X-API-KEY
+    value: my-secret-key
+
+  rate-limit:
+    enabled: true
+    requests-per-minute: 2
+
+  ip-filter:
+    enabled: false
+
+
+
+externalDependencyAccessConfiguration:
+  destinations:
+    - service: local-user-service
+      address: 127.0.0.1
+      protocol: tcp
+      portStart: 8080
+      portEnd: 8080
+
+    - service: account-service
+      address: 10.0.1.20
+      protocol: tcp
+      portStart: 8081
+      portEnd: 8081
+
+    - service: fraud-service
+      address: 10.0.1.30
+      protocol: tcp
+      portStart: 8082
+      portEnd: 8082
+
+    - service: payment-gateway
+      address: 169.117.3.24
+      protocol: tcp
+      portStart: 443
+      portEnd: 443

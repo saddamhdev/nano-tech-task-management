@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" role="img" aria-labelledby="title desc">
+  <title id="title">Base Microservices Project Architecture</title>
+  <desc id="desc">Layered architecture showing client layer, gateway, application services, shared modules, and parent pom relationships.</desc>
+
+  <defs>
+    <style>
+      .title { font: 700 28px Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .layer { font: 700 16px Arial, Helvetica, sans-serif; fill: #374151; }
+      .label { font: 600 14px Arial, Helvetica, sans-serif; fill: #111827; }
+      .small { font: 12px Arial, Helvetica, sans-serif; fill: #374151; }
+      .box { stroke-width: 1.5; rx: 8; ry: 8; }
+      .flow { stroke: #2563eb; stroke-width: 2.2; fill: none; stroke-dasharray: 7 6; }
+      .build { stroke: #4b5563; stroke-width: 1.8; fill: none; }
+    </style>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2563eb" />
+    </marker>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4b5563" />
+    </marker>
+  </defs>
+
+  <text x="40" y="42" class="title">Base Microservices Project - Whole Architecture</text>
+
+  <!-- Layer backgrounds -->
+  <rect x="24" y="70" width="1352" height="90" fill="#eff6ff" stroke="#bfdbfe" />
+  <rect x="24" y="172" width="1352" height="90" fill="#ecfeff" stroke="#a5f3fc" />
+  <rect x="24" y="274" width="1352" height="190" fill="#f0fdf4" stroke="#bbf7d0" />
+  <rect x="24" y="476" width="1352" height="200" fill="#fffbeb" stroke="#fde68a" />
+  <rect x="24" y="688" width="1352" height="110" fill="#f3f4f6" stroke="#d1d5db" />
+
+  <text x="40" y="95" class="layer">Layer 1 - Client Layer</text>
+  <text x="40" y="197" class="layer">Layer 2 - Edge Layer</text>
+  <text x="40" y="299" class="layer">Layer 3 - Application Services</text>
+  <text x="40" y="501" class="layer">Layer 4 - Shared / Env Modules</text>
+  <text x="40" y="713" class="layer">Layer 5 - Build Aggregation</text>
+
+  <!-- Clients -->
+  <rect x="250" y="106" width="260" height="38" class="box" fill="#dbeafe" stroke="#60a5fa" />
+  <text x="380" y="130" text-anchor="middle" class="label">Web / Frontend Clients</text>
+
+  <rect x="560" y="106" width="260" height="38" class="box" fill="#dbeafe" stroke="#60a5fa" />
+  <text x="690" y="130" text-anchor="middle" class="label">External API Consumers</text>
+
+  <!-- Edge -->
+  <rect x="430" y="205" width="300" height="42" class="box" fill="#ccfbf1" stroke="#14b8a6" />
+  <text x="580" y="230" text-anchor="middle" class="label">gateway-service (:8093 /gateway)</text>
+
+  <rect x="760" y="205" width="300" height="42" class="box" fill="#fef3c7" stroke="#f59e0b" />
+  <text x="910" y="230" text-anchor="middle" class="label">gateway-service-env-properties</text>
+
+  <!-- App services -->
+  <rect x="120" y="332" width="235" height="42" class="box" fill="#dcfce7" stroke="#22c55e" />
+  <text x="238" y="357" text-anchor="middle" class="label">task-management-service (:8105)</text>
+
+  <rect x="390" y="332" width="210" height="42" class="box" fill="#dcfce7" stroke="#22c55e" />
+  <text x="495" y="357" text-anchor="middle" class="label">notification-service</text>
+
+  <rect x="630" y="332" width="170" height="42" class="box" fill="#dcfce7" stroke="#22c55e" />
+  <text x="715" y="357" text-anchor="middle" class="label">kafka-service</text>
+
+  <rect x="825" y="332" width="190" height="42" class="box" fill="#dcfce7" stroke="#22c55e" />
+  <text x="920" y="357" text-anchor="middle" class="label">rabbitmq-service</text>
+
+  <rect x="1045" y="332" width="150" height="42" class="box" fill="#dcfce7" stroke="#22c55e" />
+  <text x="1120" y="357" text-anchor="middle" class="label">splunk-service</text>
+
+  <rect x="1215" y="332" width="130" height="42" class="box" fill="#dcfce7" stroke="#22c55e" />
+  <text x="1280" y="357" text-anchor="middle" class="label">grpc-service</text>
+
+  <!-- Shared/env modules -->
+  <rect x="100" y="530" width="180" height="38" class="box" fill="#fef3c7" stroke="#f59e0b" />
+  <text x="190" y="554" text-anchor="middle" class="label">core-common</text>
+
+  <rect x="310" y="530" width="250" height="38" class="box" fill="#fef3c7" stroke="#f59e0b" />
+  <text x="435" y="554" text-anchor="middle" class="label">kafka-service-env-properties</text>
+
+  <rect x="590" y="530" width="280" height="38" class="box" fill="#fef3c7" stroke="#f59e0b" />
+  <text x="730" y="554" text-anchor="middle" class="label">rabbitmq-service-env-properties</text>
+
+  <rect x="900" y="530" width="250" height="38" class="box" fill="#fef3c7" stroke="#f59e0b" />
+  <text x="1025" y="554" text-anchor="middle" class="label">splunk-hec-env-properties</text>
+
+  <rect x="1180" y="530" width="190" height="38" class="box" fill="#fef3c7" stroke="#f59e0b" />
+  <text x="1275" y="554" text-anchor="middle" class="label">log-env-properties</text>
+
+  <rect x="520" y="584" width="260" height="38" class="box" fill="#fef3c7" stroke="#f59e0b" />
+  <text x="650" y="608" text-anchor="middle" class="label">redis-service-env-properties</text>
+
+  <!-- Parent POM -->
+  <rect x="520" y="726" width="360" height="46" class="box" fill="#e5e7eb" stroke="#6b7280" />
+  <text x="700" y="754" text-anchor="middle" class="label">base (Parent POM)</text>
+
+  <!-- Runtime dashed flow -->
+  <line x1="380" y1="144" x2="530" y2="205" class="flow" marker-end="url(#arrowBlue)" />
+  <line x1="690" y1="144" x2="620" y2="205" class="flow" marker-end="url(#arrowBlue)" />
+
+  <line x1="580" y1="247" x2="238" y2="332" class="flow" marker-end="url(#arrowBlue)" />
+  <line x1="580" y1="247" x2="495" y2="332" class="flow" marker-end="url(#arrowBlue)" />
+  <line x1="580" y1="247" x2="715" y2="332" class="flow" marker-end="url(#arrowBlue)" />
+  <line x1="580" y1="247" x2="920" y2="332" class="flow" marker-end="url(#arrowBlue)" />
+
+  <!-- Build dependencies solid -->
+  <line x1="700" y1="726" x2="700" y2="247" class="build" marker-end="url(#arrowGray)" />
+  <line x1="700" y1="726" x2="190" y2="568" class="build" marker-end="url(#arrowGray)" />
+  <line x1="700" y1="726" x2="435" y2="568" class="build" marker-end="url(#arrowGray)" />
+  <line x1="700" y1="726" x2="730" y2="568" class="build" marker-end="url(#arrowGray)" />
+  <line x1="700" y1="726" x2="1025" y2="568" class="build" marker-end="url(#arrowGray)" />
+  <line x1="700" y1="726" x2="1275" y2="568" class="build" marker-end="url(#arrowGray)" />
+  <line x1="700" y1="726" x2="650" y2="622" class="build" marker-end="url(#arrowGray)" />
+
+  <!-- Service-to-module dependencies -->
+  <line x1="238" y1="374" x2="210" y2="530" class="build" marker-end="url(#arrowGray)" />
+  <line x1="495" y1="374" x2="230" y2="530" class="build" marker-end="url(#arrowGray)" />
+  <line x1="715" y1="374" x2="435" y2="530" class="build" marker-end="url(#arrowGray)" />
+  <line x1="920" y1="374" x2="730" y2="530" class="build" marker-end="url(#arrowGray)" />
+  <line x1="1120" y1="374" x2="1025" y2="530" class="build" marker-end="url(#arrowGray)" />
+  <line x1="1120" y1="374" x2="1275" y2="530" class="build" marker-end="url(#arrowGray)" />
+  <line x1="580" y1="247" x2="910" y2="205" class="build" marker-end="url(#arrowGray)" />
+  <line x1="580" y1="247" x2="190" y2="530" class="build" marker-end="url(#arrowGray)" />
+
+  <!-- Legend -->
+  <rect x="980" y="722" width="360" height="62" fill="#ffffff" stroke="#d1d5db" rx="8" ry="8" />
+  <line x1="1000" y1="744" x2="1080" y2="744" class="flow" marker-end="url(#arrowBlue)" />
+  <text x="1090" y="748" class="small">Runtime request / gateway routing</text>
+  <line x1="1000" y1="766" x2="1080" y2="766" class="build" marker-end="url(#arrowGray)" />
+  <text x="1090" y="770" class="small">Build/module dependency relationship</text>
+</svg>
+
