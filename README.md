@@ -1,4 +1,4 @@
-# Nano tech Microservices Project
+# Nano Tech Assignment Microservices Project
 
 This repository is a multi-module Spring Boot workspace built around a gateway-based microservices architecture.
 It includes shared support modules, environment-specific configuration modules, and backend services such as the task management service.
