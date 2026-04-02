@@ -184,9 +184,9 @@ eureka:
 
 service-log:
   logfile:
-    enabled: false
-  splunk:
     enabled: true
+  splunk:
+    enabled: false
   rabbitmq:
     enabled: false
   kafka:
